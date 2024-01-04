@@ -1,0 +1,292 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(96, 73, 114, 0.76);
+}
+
+.logo-and-text {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, -95%);
+    z-index: 2;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-wrap:nowrap;
+}
+
+.logo-and-text img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.vertical-line {
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 5px solid #F7FFC8;;
+    height: 300px;
+    margin: 0 20px;
+}
+
+.text-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logo-lp {
+    width: 70px; 
+    margin-left: 10px;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.text-container span{
+    display: flex;
+    font-size: smaller;
+    font-family: 'Libre Baskerville';
+}
+
+#above-logo {
+    font-size: large;
+    font-family: 'Libre Baskerville';
+}
+
+.nav-item {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: black;
+    margin-right: 8px;
+}
+
+.dropdown-toggle:hover {
+    background-color: #B642C0;
+    color: white !important;
+}
+
+ul .dropdown-item:hover {
+    background-color: #B642C0;
+    color: white;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu {
+    right: 0;
+}
+
+.text-container h3 {
+    font-family: 'Mulish';
+    font-size: 47px;
+}
+
+.text-container h1 {
+    font-family: 'Public Sans';
+    font-size: 64px;
+    line-height: normal;
+}
+
+.text-container h2 {
+    color: #FFF; 
+    letter-spacing: 3px; 
+    font-family:'Merriweather';
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 20px;
+
+}
+
+center h3, th, td{
+    font-family: 'Mulish';
+}
+
+.col-lg-3 {
+    font-family: 'Libre Baskerville';
+    color: white;
+}
+
+.col-lg-3 h5 {
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+#judul-penelitian {
+    transform: translate(30%, 0%);
+}
+
+.col-lg-3 li {
+    color: #D4D4D4;
+    font-family: 'Libre Baskerville';
+    font-size: 16px;
+}
+
+.about-us {
+    color: #D4D4D4;
+    font-family: 'Libre Baskerville';
+    font-size: 18px;
+}
+
+.col-lg-12 h3 {
+    font-family: 'Mulish';
+}
+
+.nav-item span.material-symbols-outlined {
+    vertical-align: middle; 
+    margin-right: 5px;
+    width: 20px;
+}
+
+.footer-container {
+    padding-left: 50px;
+}
+
+.icon-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    margin: 0;
+}
+
+.icon-text p{
+    margin: 0;
+    padding: 0;
+}
+
+.col-lg-3 h5, .col-lg-12 h5 {
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    font-size: 23px;
+}
+
+.container {
+    font-family: 'Mulish';
+}
+
+/* search bar */
+
+.form-control:focus {
+    outline: none;
+}
+
+.form-control:focus, .form-control.focus {
+    box-shadow: none !important;
+}
+
+.input-group {
+    border-bottom: 1px solid #000;
+    max-width: 250px;
+}
+
+.container-search {
+    display: flex;
+    justify-content: flex-end;
+}
+
+label.input-group-text {
+    font-size: 20px;
+}
+
+/* search bar ends here */
+
+/* table */
+.table th {
+    text-align: center;
+    font-size: 25px;
+    padding: 12px;
+}
+
+.table td {
+    text-align: center;
+    padding: 12px;
+}
+
+.center-table {
+    max-width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.center-table tr td {
+    border-bottom: 1px solid #000; 
+}
+
+.center-table tr th {
+    border-top: 1px solid #000; 
+    border-bottom: 2px solid #8F3797; 
+}
+
+.center-table a {
+    text-decoration: none;
+    color: #000;
+}
+/* table ends here */
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 73px;
+    margin-right: 70px;
+    font-family: 'Mulish';
+    margin-top: 10px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 5px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    font-family: 'Mulish';
+}
+
+.pagination a.page {
+    font-weight: bold;
+}
+
+.pagination .ellipsis {
+    margin: 0 6px;
+}
+
+.pagination a.previous,
+.pagination a.next {
+    color: #8F3797;
+}
+
+.pagination-info {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scroll-to-top img {
+    width: 70px;
+}
