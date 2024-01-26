@@ -39,11 +39,13 @@ $routes->set404Override();
 // FRONT ROUTES
 $routes->get('/', 'Home::index');
 $routes->get('/profil', 'Home::profil');
-$routes->get('/berita/penelitian', 'Home::berita_penelitian');
-$routes->get('/berita/kegiatan', 'Home::berita_kegiatan');
+$routes->get('/berita', 'Home::berita');
+$routes->get('/berita/detail/(:segment)', 'Home::detailBerita/$1');
+$routes->get('/berita/penelitian', 'Home::beritaPenelitian');
+$routes->get('/berita/kegiatan', 'Home::beritaKegiatan');
 $routes->get('/unduh', 'Home::unduh');
-$routes->get('/daftar-penerima/dana', 'Home::penerima_dana');
-$routes->get('/daftar-penerima/hibah', 'Home::penerima_hibah');
+$routes->get('/hibah/dana', 'Home::hibahDana');
+$routes->get('/hibah/penelitian', 'Home::hibahPenelitian');
 
 // BACK ROUTES
 // Authentication
@@ -72,14 +74,29 @@ $routes->get('/admin/agenda', 'Agenda::index');
 $routes->post('/admin/agenda/add', 'Agenda::add_agenda');
 $routes->post('/admin/agenda/edit/(:segment)', 'Agenda::edit_agenda/$1');
 $routes->get('/admin/agenda/delete/(:segment)', 'Agenda::delete_agenda/$1');
+$routes->get('/admin/agenda/reset', 'Agenda::reset_agenda');
 // Berita
 $routes->get('/admin/berita', 'Berita::index');
 $routes->post('/admin/berita/add', 'Berita::add_berita');
 $routes->post('/admin/berita/edit/(:segment)', 'Berita::edit_berita/$1');
 $routes->get('/admin/berita/delete/(:segment)', 'Berita::delete_berita/$1');
+// Daftar Penerima Hibah Dana
+$routes->get('/admin/hibah/dana', 'Hibah::index_dana');
+$routes->post('/admin/hibah/dana/add', 'Hibah::add_dana');
+$routes->post('/admin/hibah/dana/edit/(:segment)', 'Hibah::edit_dana/$1');
+$routes->get('/admin/hibah/dana/delete/(:segment)', 'Hibah::delete_dana/$1');
+// Daftar Penerima Hibah Penelitian
+$routes->get('/admin/hibah/penelitian', 'Hibah::index_penelitian');
+$routes->post('/admin/hibah/penelitian/add', 'Hibah::add_penelitian');
+$routes->post('/admin/hibah/penelitian/edit/(:segment)', 'Hibah::edit_penelitian/$1');
+$routes->get('/admin/hibah/penelitian/delete/(:segment)', 'Hibah::delete_penelitian/$1');
+// Master Data Pengguna
+$routes->get('/admin/master/pengguna', 'Master::index_pengguna');
 // Unduh
 $routes->get('/admin/unduh', 'Unduh::index');
 $routes->post('/admin/unduh/add', 'Unduh::add_unduh');
+$routes->post('/admin/unduh/edit/(:segment)', 'Unduh::edit_unduh/$1');
+$routes->get('/admin/unduh/delete/(:segment)', 'Unduh::delete_unduh/$1');
 
 /*
  * --------------------------------------------------------------------

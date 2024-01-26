@@ -1,0 +1,21 @@
+CRITICAL - 2024-01-18 23:43:34 --> Undefined variable $berita
+in APPPATH\Views\berita.php on line 148.
+ 1 APPPATH\Views\berita.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $berita', 'APPPATH\\Views\\berita.php', 148)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\berita.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('berita', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->berita()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 23:44:23 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\berita.php on line 169.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('berita', [], true)
+ 4 APPPATH\Controllers\Home.php(45): view('berita', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->berita()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

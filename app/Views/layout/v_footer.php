@@ -69,4 +69,117 @@
 <?php } ?>
 </body>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Ambil elemen input file
+        var fileInput = document.getElementById('file');
+
+        // Ambil nilai placeholder dari data-placeholder dan tetapkan ke input file
+        var placeholderValue = fileInput.getAttribute('data-placeholder');
+        fileInput.setAttribute('placeholder', placeholderValue);
+    });
+</script>
+
+<script>
+    // Mendapatkan elemen input berdasarkan id
+    var inputTahun = document.getElementById('tahun');
+
+    // Mendapatkan tahun saat ini
+    var tahunSaatIni = new Date().getFullYear();
+
+    // Mengisi nilai tahun ke dalam elemen input
+    inputTahun.value = tahunSaatIni;
+</script>
+
+<script type="text/javascript">
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('li a');
+    const menuLength = menuItem.length
+    for (let i = 0; i < menuLength; i++) {
+        if (menuItem[i].href === currentLocation) {
+            menuItem[i].className = "nav-link active"
+        }
+    }
+</script>
+
+<script>
+    function bacaGambar(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#gambar_load').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $('#main_image').change(function() {
+        bacaGambar(this);
+    })
+</script>
+
+<script>
+    function bacaGambar1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#gambar_load1').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $('#foto1').change(function() {
+        bacaGambar1(this);
+    })
+</script>
+
+<script>
+    function bacaGambar2(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#gambar_load2').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $('#foto2').change(function() {
+        bacaGambar2(this);
+    })
+</script>
+
+<script>
+    function bacaGambar3(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#gambar_load3').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $('#foto3').change(function() {
+        bacaGambar3(this);
+    })
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/659b7ee60ff6374032bd88cc/1hjjmfdsj';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
 </html>

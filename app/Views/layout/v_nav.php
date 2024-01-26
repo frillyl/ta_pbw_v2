@@ -1,9 +1,9 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?= base_url('admin/dashboard') ?>">Beranda</a>
+            <a class="nav-link" aria-current="page" href="<?= base_url('admin/dashboard') ?>">Beranda</a>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Profil
             </a>
@@ -12,24 +12,32 @@
                 <li><a class="dropdown-item" href="<?= base_url('admin/profil/visi') ?>">Visi</a></li>
                 <li><a class="dropdown-item" href="<?= base_url('admin/profil/misi') ?>">Misi</a></li>
             </ul>
-        </li>
+        </li> -->
         <li class="nav-item">
             <a class="nav-link" aria-current="page" href="<?= base_url('admin/agenda') ?>">Agenda</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" aria-current="page" href="<?= base_url('admin/berita') ?>">Berita</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="<?= base_url('admin/unduh') ?>">Unduh</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Daftar Penerima Hibah
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="<?= base_url('admin/hibah/dana') ?>">Dana</a></li>
+                <li><a class="dropdown-item" href="<?= base_url('admin/hibah/penelitian') ?>">Penelitian</a></li>
+            </ul>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Daftar Penerima
+                Master Data
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="<?= base_url('admin/penerima/pdana') ?>">Dana</a></li>
-                <li><a class="dropdown-item" href="<?= base_url('admin/penerima/hibah') ?>">Hibah</a></li>
+                <li><a class="dropdown-item" href="<?= base_url('admin/master/pengguna') ?>">Pengguna</a></li>
             </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="<?= base_url('admin/unduh') ?>">Unduh</a>
         </li>
     </ul>
 

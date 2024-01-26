@@ -11,6 +11,7 @@
     <div class="row mt-5">
         <div class="col-lg-12">
             <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#add" style="background-color: #8F3797; color: #fff"><i class="fa fa-plus"></i> Tambah Data</button>
+            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#reset"><i class="fa-solid fa-arrows-rotate"></i> Reset Data</button>
         </div>
     </div>
     <div class="row mt-3">
@@ -38,7 +39,7 @@
                 <thead>
                     <tr>
                         <th class="text-center" scope="col">#</th>
-                        <th class="text-center" scope="col">Tanggal Agenda</th>
+                        <th class="text-center" scope="col">Periode</th>
                         <th class="text-center" width="300px" scope="col">Judul Agenda</th>
                         <th class="text-center" width="500px" scope="col">Keterangan</th>
                         <th class="text-center" scope="col">Aksi</th>
@@ -235,4 +236,23 @@
             </div>
         </div>
     <?php } ?>
+
+    <!-- Modal Reset -->
+    <div class="modal fade" id="reset">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5" id="modalDeleteLabel"><b>Reset Data</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Apakah Anda yakin ingin <b>mereset seluruh data</b> yang ada di <b>table agenda</b>?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Batal</button>
+                    <a href="<?= base_url('admin/agenda/reset') ?>" class="btn btn-danger">Reset</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

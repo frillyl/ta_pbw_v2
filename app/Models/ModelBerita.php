@@ -9,7 +9,7 @@ class ModelBerita extends Model
     protected $table = "tb_berita";
     protected $primaryKey = "id_berita";
     protected $returnType = "object";
-    protected $allowedFields = ['id_user', 'created_at', 'judul_berita', 'sub_judul', 'kategori', 'isi_berita', 'edited_by', 'edited_at'];
+    protected $allowedFields = ['id_berita', 'id_user', 'created_at', 'judul_berita', 'sub_judul', 'kategori', 'isi_berita', 'image1', 'image2', 'image3', 'edited_by', 'edited_at'];
 
     public function allData()
     {
@@ -20,12 +20,32 @@ class ModelBerita extends Model
             ->get()->getResultArray();
     }
 
+    public function beritaPenelitian()
+    {
+        return $this->db->table('tb_berita')
+            ->select('tb_berita.*, tb_user.*')
+            ->join('tb_user', 'tb_user.id_user = tb_berita.id_user OR tb_user.id_user = tb_berita.edited_by', 'left')
+            ->where('tb_berita.kategori', 1)
+            ->orderBy('tb_berita.created_at', 'ASC')
+            ->get()->getResultArray();
+    }
+
+    public function beritaKegiatan()
+    {
+        return $this->db->table('tb_berita')
+            ->select('tb_berita.*, tb_user.*')
+            ->join('tb_user', 'tb_user.id_user = tb_berita.id_user OR tb_user.id_user = tb_berita.edited_by', 'left')
+            ->where('tb_berita.kategori', 2)
+            ->orderBy('tb_berita.created_at', 'ASC')
+            ->get()->getResultArray();
+    }
+
     public function detailData($id_berita)
     {
         return $this->db->table('tb_berita')
             ->select('tb_berita.*, tb_user.*')
             ->join('tb_user', 'tb_user.id_user = tb_berita.id_user OR tb_user.id_user = tb_berita.edited_by', 'left')
-            ->where('tb_berita.id_misi', $id_berita)
+            ->where('tb_berita.id_berita', $id_berita)
             ->get()->getRowArray();
     }
 

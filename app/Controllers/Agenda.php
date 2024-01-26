@@ -140,4 +140,11 @@ class Agenda extends BaseController
         session()->setFlashdata('pesan', 'Data berhasil dihapus.');
         return redirect()->to(base_url('admin/agenda'));
     }
+
+    public function reset_agenda()
+    {
+        $this->ModelAgenda->reset_data();
+        session()->setFlashdata('pesan', 'Data berhasil direset.');
+        return redirect()->to(base_url('admin/agenda'));
+    }
 }

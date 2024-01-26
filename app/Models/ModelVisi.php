@@ -29,6 +29,12 @@ class ModelVisi extends Model
             ->get()->getRowArray();
     }
 
+    public function tampilData()
+    {
+        return $this->db->table('tb_visi')
+            ->get()->getRowArray();
+    }
+
     public function add($data)
     {
         $this->db->table('tb_visi')->insert($data);

@@ -17,7 +17,7 @@
     color: #fff;
     display: flex;
     align-items: center;
-    text-wrap:nowrap;
+    text-wrap: nowrap;
 }
 
 .logo-and-text img {
@@ -29,7 +29,8 @@
 .vertical-line {
     display: inline-block;
     vertical-align: middle;
-    border-left: 5px solid #F7FFC8;;
+    border-left: 5px solid #F7FFC8;
+    ;
     height: 300px;
     margin: 0 20px;
 }
@@ -40,7 +41,7 @@
 }
 
 #logo-lp {
-    width: 70px; 
+    width: 70px;
     margin-left: 10px;
 }
 
@@ -50,7 +51,7 @@
     color: black;
 }
 
-.text-container span{
+.text-container span {
     display: flex;
     font-size: smaller;
     font-family: 'Libre Baskerville';
@@ -102,16 +103,17 @@ ul .dropdown-item:hover {
 }
 
 .text-container h2 {
-    color: #FFF; 
-    letter-spacing: 3px; 
-    font-family:'Merriweather';
+    color: #FFF;
+    letter-spacing: 3px;
+    font-family: 'Merriweather';
     font-size: 64px;
     text-align: center;
     letter-spacing: 20px;
-
 }
 
-center h3, th, td{
+center h3,
+th,
+td {
     font-family: 'Mulish';
 }
 
@@ -129,7 +131,7 @@ center h3, th, td{
 
 #judul-penelitian {
     transform: translate(30%, 0%);
-    font-size: 55px;
+    font-size: 45px;
 }
 
 .col-lg-3 li {
@@ -149,7 +151,7 @@ center h3, th, td{
 }
 
 .nav-item span.material-symbols-outlined {
-    vertical-align: middle; 
+    vertical-align: middle;
     margin-right: 5px;
     width: 20px;
 }
@@ -165,12 +167,13 @@ center h3, th, td{
     margin: 0;
 }
 
-.icon-text p{
+.icon-text p {
     margin: 0;
     padding: 0;
 }
 
-.col-lg-3 h5, .col-lg-12 h5 {
+.col-lg-3 h5,
+.col-lg-12 h5 {
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: 2px solid white;
@@ -182,13 +185,15 @@ center h3, th, td{
     font-family: 'Mulish';
 }
 
+
 /* search bar */
 
 .form-control:focus {
     outline: none;
 }
 
-.form-control:focus, .form-control.focus {
+.form-control:focus,
+.form-control.focus {
     box-shadow: none !important;
 }
 
@@ -206,9 +211,12 @@ label.input-group-text {
     font-size: 20px;
 }
 
+
 /* search bar ends here */
 
+
 /* table */
+
 .table th {
     text-align: center;
     font-size: 17px;
@@ -228,18 +236,20 @@ label.input-group-text {
 }
 
 .center-table tr td {
-    border-bottom: 1px solid #000; 
+    border-bottom: 1px solid #000;
 }
 
 .center-table tr th {
-    border-top: 1px solid #000; 
-    border-bottom: 2px solid #8F3797; 
+    border-top: 1px solid #000;
+    border-bottom: 2px solid #8F3797;
 }
 
 .center-table a {
     text-decoration: none;
     color: #000;
 }
+
+
 /* table ends here */
 
 .pagination-container {
@@ -282,8 +292,8 @@ label.input-group-text {
 #scroll-to-top {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 75px;
+    right: 10px;
     border: none;
     padding: 10px;
     cursor: pointer;

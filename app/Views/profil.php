@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penelitian Gunadarma</title>
+    <title><?= $title ?> | <?= $sub ?></title>
     <link rel="icon" href="<?= base_url() ?>/public/assets/images/logo.png">
     <link rel="stylesheet" href="<?= base_url() ?>/public/assets/css/style3.css">
-    <script src="<?= base_url() ?>/public/assets/javascript/style.js"></script>
+    <script src="<?= base_url() ?>/public/assets/javascript/script.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,34 +49,34 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.php">Beranda</a>
+                            <a class="nav-link" aria-current="page" href="<?= base_url() ?>">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="Profil.php" style="color: #B642C0; border-bottom: 3px solid #B642C0; padding-bottom: 2px;">Profil</a>
+                            <a class="nav-link" aria-current="page" href="<?= base_url('profil') ?>" style="color: #B642C0; border-bottom: 4px solid #B642C0; padding-bottom: 2px;">Profil</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="berita.php" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="<?= base_url('berita') ?>" role="button" aria-haspopup="true" aria-expanded="false">
                                 Berita
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="beritaPenelitian.php">Penelitian</a></li>
-                                <li><a class="dropdown-item" href="beritaKegiatan.php">Kegiatan</a></li>
+                                <li><a class="dropdown-item" href="<?= base_url('berita/penelitian') ?>">Penelitian</a></li>
+                                <li><a class="dropdown-item" href="<?= base_url('berita/kegiatan') ?>">Kegiatan</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="unduh.php">Unduh</a>
+                            <a class="nav-link" aria-current="page" href="<?= base_url('unduh') ?>">Unduh</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                Daftar Penerima
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Daftar Penerima Hibah
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="dana.php">Dana</a></li>
-                                <li><a class="dropdown-item" href="hibah.php">Hibah</a></li>
+                                <li><a class="dropdown-item" href="<?= base_url('hibah/dana') ?>">Dana Padanan</a></li>
+                                <li><a class="dropdown-item" href="<?= base_url('hibah/penelitian') ?>">Penelitian</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Tautan
                             </a>
                             <ul class="dropdown-menu">
@@ -126,30 +126,30 @@
                         <h5 class="fs-2 me-3">Tentang Kami</h5>
                         <div class="garis"></div>
                     </div>
-                    <p><?= $tentang_kami['isi'] ?></p>
+                    <p>Lorem ipsum dolor sit amet consectetur. In sit odio mauris congue tristique auctor. Eu diam ipsum
+                        velit congue quis eu. Ultricies nulla donec turpis odio est a vitae ultrices. Bibendum arcu
+                        blandit quisque adipiscing cursus tellus bibendum morbi. Volutpat lectus orci tincidunt enim.
+                        Diam neque semper morbi ac ultricies vitae. Sit eget venenatis cursus massa turpis risus in
+                        neque. Laoreet arcu nisl non posuere adipiscing cursus aliquam ullamcorper feugiat.</p>
                     <div class="row">
                         <div class="col-lg-12 text-center d-flex align-items-center">
                             <h5 class="fs-2 me-3">Visi</h5>
                             <div class="garis"></div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur. In sit odio mauris congue tristique auctor. Eu diam
-                            ipsum velit congue quis eu. Ultricies nulla donec turpis odio est a vitae ultrices. Bibendum
-                            arcu blandit quisque adipiscing cursus tellus bibendum morbi. Volutpat lectus orci tincidunt
-                            enim.
+                        <p>Pada tahun 2022 menjadi Universitas Gunadarma menjadi perguruan tinggi swasta bereputasi internasional berbasis keunggulan dalam kegiatan tridharma perguruan tinggi yang holistik dan integratif dalam rangka meningkatkan daya saing bangsa.
+                        </p>
                     </div>
-                    </p>
                     <div class="row">
                         <div class="col-lg-12 text-center d-flex align-items-center">
                             <h5 class="fs-2 me-3">Misi</h5>
                             <div class="garis"></div>
                         </div>
                         <ul class="ms-4">
-                            <li>Lorem ipsum dolor sit amet consectetur. In sit odio mauris congue tristique auctor.
-                            </li>
-                            <li>Lorem ipsum dolor sit amet consectetur. In sit odio mauris congue tristique auctor.
-                            </li>
-                            <li>Lorem ipsum dolor sit amet consectetur. In sit odio mauris congue tristique auctor.
-                            </li>
+                            <li>Menyelenggarakan pendidikan tinggi berbasis teknologi informasi dan komunikasi dalam rangka menghasilkan SDM yang kompetitif dan berkarakter.</li>
+                            <li>Menyelenggarakan kegiatan penelitian bertaraf nasional dan international yang mendorong pengembangan keilmuan dan perekonomian nasional.</li>
+                            <li>Menyelenggarakan kegiatan pengabdian kepada masyarakat sebagai pengejawantahan tanggung jawab sosial universitas dalam rangka meningkatkan kesejahteraan masyarakat.</li>
+                            <li>Menyelenggarakan kerjasama dengan pelbagai lembaga, baik di dalam maupun di luar negeri, dengan mengutamakan kepentingan nasional dan memperkuat jati diri bangsa.</li>
+                            <li>Menerapkan tata kelola universitas yang baik dalam rangka meningkatkan daya adaptasi universitas terhadap dinamika lingkungan global.</li>
                         </ul>
                         <div class="row">
                             <div class="col-lg-12 text-center d-flex align-items-center">
@@ -162,19 +162,19 @@
                             </div>
                         </div>
                     </div>
-                    <div id="scroll-to-top" title="Kembali ke atas">
-                        <img src="<?= base_url() ?>/public/assets/images/arrow.png" alt="Arrow Up">
-                    </div>
+                </div>
 
-                    <!--PROFIL END-->
+                <!--PROFIL END-->
 
     </main>
-
+    <div id="scroll-to-top" title="Kembali ke atas">
+        <img src="<?= base_url() ?>/public/assets/images/arrow.png" alt="Arrow Up">
+    </div>
 
     <div class="container-fluid" style="background-color: #833A8A; color:#fff">
         <footer class="row-cols-1 py-5 my-5 border-top">
             <div class="row justify-content-between footer-container">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <h5>LEMBAGA PENELITIAN</h5>
                     <h6>UNIVERSITAS GUNADARMA</h6>
                     <ul class="nav flex-column">
@@ -201,7 +201,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <h5>Tentang Kami</h5>
                     <p class="about-us">Lembaga Penelitian Universitas Gunadarma adalah lembaga di lingkungan
                         Universitas Gunadarma yang mengelola
@@ -209,7 +209,7 @@
                         riset dan pengabdian serta luarannya.</p>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <h5>Link Terkait</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="http://gunadarma.ac.id" target="_blank" style="text-decoration:none; color:#D4D4D4; font-size: 20px">Web Gunadarma</a></li>
@@ -247,6 +247,21 @@
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
 
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/659b7ee60ff6374032bd88cc/1hjjmfdsj';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 </html>

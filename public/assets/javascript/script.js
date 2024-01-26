@@ -22,3 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.documentElement.scrollTop = 0;
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleSlidesOnly'), {
+        interval: 3000,
+        wrap: true
+    });
+});

@@ -11,17 +11,22 @@ body {
     background-color: rgba(96, 73, 114, 0.76);
 }
 
+.carousel-inner img {
+    width: 700px;
+    height: 700px;
+}
+
 .logo-and-text {
     position: absolute;
     top: 65%;
-    left: 40%;
+    left: 45%;
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: left;
     color: #fff;
     display: flex;
     align-items: center;
-    text-wrap:nowrap;
+    text-wrap: nowrap;
 }
 
 .logo-and-text img {
@@ -33,7 +38,8 @@ body {
 .vertical-line {
     display: inline-block;
     vertical-align: middle;
-    border-left: 5px solid #F7FFC8;;
+    border-left: 5px solid #F7FFC8;
+    ;
     height: 300px;
     margin: 0 20px;
 }
@@ -44,7 +50,7 @@ body {
 }
 
 #logo-lp {
-    width: 70px; 
+    width: 70px;
     margin-left: 10px;
 }
 
@@ -54,7 +60,7 @@ body {
     color: black;
 }
 
-.text-container span{
+.text-container span {
     display: flex;
     font-size: smaller;
     font-family: 'Libre Baskerville';
@@ -141,7 +147,9 @@ ul .dropdown-item:hover {
     text-align: center;
 }
 
-center h3, th, td{
+center h3,
+th,
+td {
     font-family: 'Mulish';
 }
 
@@ -150,7 +158,8 @@ center h3, th, td{
     color: white;
 }
 
-.col-lg-3 h5, .col-lg-12 h5 {
+.col-lg-3 h5,
+.col-lg-12 h5 {
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: 2px solid white;
@@ -161,7 +170,7 @@ center h3, th, td{
 .col-lg-3 h6 {
     font-size: 19px;
 }
- 
+
 .center-table {
     max-width: 60%;
     margin: auto;
@@ -181,6 +190,12 @@ center h3, th, td{
 
 .col-lg-12 h3 {
     font-family: 'Mulish';
+    font-weight: 700;
+    color: #8F3797;
+}
+
+.col-lg-12 span {
+    font-weight: 400;
 }
 
 .card {
@@ -188,7 +203,7 @@ center h3, th, td{
 }
 
 .nav-item span.material-symbols-outlined {
-    vertical-align: middle; 
+    vertical-align: middle;
     margin-right: 5px;
     width: 20px;
 }
@@ -204,7 +219,7 @@ center h3, th, td{
     margin: 0;
 }
 
-.icon-text p{
+.icon-text p {
     margin: 0;
     padding: 0;
 }
@@ -212,8 +227,8 @@ center h3, th, td{
 #scroll-to-top {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 75px;
+    right: 10px;
     border: none;
     padding: 10px;
     cursor: pointer;

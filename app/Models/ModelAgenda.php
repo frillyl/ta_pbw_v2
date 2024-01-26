@@ -47,4 +47,9 @@ class ModelAgenda extends Model
             ->where('id_agenda', $data['id_agenda'])
             ->delete($data);
     }
+
+    public function reset_data()
+    {
+        $this->db->query('TRUNCATE TABLE tb_agenda');
+    }
 }

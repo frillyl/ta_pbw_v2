@@ -113,6 +113,23 @@
                                     <td><?= $value['isi_berita'] ?></td>
                                 </tr>
                                 <tr>
+                                    <th scope="row">Foto Utama</th>
+                                    <td><img src="<?= base_url('public/assets/media/' . $value['main_image']) ?>" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Foto 1</th>
+                                    <td><img src="<?= base_url('public/assets/media/' . $value['image1']) ?>" class="img-fluid"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Foto 2</th>
+                                    <td><img src="<?= base_url('public/assets/media/' . $value['image2']) ?>" class="img-fluid"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Foto 3</th>
+                                    <td><img src="<?= base_url('public/assets/media/' . $value['image3']) ?>" class="img-fluid"></td>
+                                </tr>
+                                <tr>
                                     <th scope="row">Diedit Pada</th>
                                     <td><?php if ($value['edited_at'] == '') : ?>
                                             Berita belum diedit.
@@ -175,6 +192,42 @@
                         <label for="isi_berita"><b>Isi Berita</b></label>
                         <textarea name="isi_berita" class="form-control" id="isi_berita" cols="30" rows="10"></textarea>
                     </div>
+                    <div class="form-group mt-2">
+                        <label for="main_image"><b>Foto Utama</b></label>
+                        <input type="file" name="main_image" id="main_image" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="main_image_preview"><b>Preview Foto Utama</b></label>
+                        <br>
+                        <img src="<?= base_url('public/assets/media/' . $value['main_image']) ?>" id="gambar_load" class="img-fluid">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="foto1"><b>Foto 1</b></label>
+                        <input type="file" name="foto1" id="foto1" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="foto1_preview"><b>Preview Foto 1</b></label>
+                        <br>
+                        <img src="<?= base_url('public/assets/media/' . $value['main_image']) ?>" id="gambar_load1" class="img-fluid">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="foto2"><b>Foto 2</b></label>
+                        <input type="file" name="foto2" id="foto2" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="foto2_preview"><b>Preview Foto 2</b></label>
+                        <br>
+                        <img src="<?= base_url('public/assets/media/' . $value['main_image']) ?>" id="gambar_load2" class="img-fluid">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="foto3"><b>Foto 3</b></label>
+                        <input type="file" name="foto3" id="foto3" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="foto3_preview"><b>Preview Foto 3</b></label>
+                        <br>
+                        <img src="<?= base_url('public/assets/media/' . $value['main_image']) ?>" id="gambar_load3" class="img-fluid">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -227,6 +280,42 @@
                             <label for="isi_berita"><b>Isi Berita</b></label>
                             <textarea name="isi_berita" class="form-control" id="isi_berita" cols="30" rows="10"><?= $value['isi_berita'] ?></textarea>
                         </div>
+                        <div class="form-group mt-2">
+                            <label for="main_image"><b>Foto Utama</b></label>
+                            <input type="file" name="main_image" id="main_image" class="form-control">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="main_image_preview"><b>Preview Foto Utama</b></label>
+                            <br>
+                            <img src="<?= base_url('public/assets/media/' . $value['main_image']) ?>" id="gambar_load" class="img-fluid">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="foto1"><b>Foto 1</b></label>
+                            <input type="file" name="foto1" id="foto1" class="form-control">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="foto1_preview"><b>Preview Foto 1</b></label>
+                            <br>
+                            <img src="<?= base_url('public/assets/media/' . $value['image1']) ?>" id="gambar_load1" class="img-fluid">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="foto2"><b>Foto 2</b></label>
+                            <input type="file" name="foto2" id="foto2" class="form-control">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="foto2_preview"><b>Preview Foto 2</b></label>
+                            <br>
+                            <img src="<?= base_url('public/assets/media/' . $value['image2']) ?>" id="gambar_load2" class="img-fluid">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="foto3"><b>Foto 3</b></label>
+                            <input type="file" name="foto3" id="foto3" class="form-control">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="foto3_preview"><b>Preview Foto 3</b></label>
+                            <br>
+                            <img src="<?= base_url('public/assets/media/' . $value['image3']) ?>" id="gambar_load3" class="img-fluid">
+                        </div>
                         <div class="form-group">
                             <label for="edited_by" hidden><b>Diedit Oleh</b></label>
                             <input type="text" name="edited_by" class="form-control" id="edited_by" placeholder="<?= session('nm_user') ?>" value="<?= session('id_user') ?>" hidden>
@@ -252,7 +341,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Apakah Anda yakin ingin menghapus data yang dibuat oleh <b><?= $value['nm_user'] ?></b> pada <b><?= date('d-m-Y H:i:s', strtotime($value['created_at'])) ?></b>?
+                        Apakah Anda yakin ingin menghapus berita <b><?= $value['judul_berita'] ?></b>?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Batal</button>

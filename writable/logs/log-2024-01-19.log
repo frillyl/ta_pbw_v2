@@ -1,0 +1,50 @@
+CRITICAL - 2024-01-19 00:52:44 --> Undefined variable $beritaKegiatan
+in APPPATH\Views\beritaKegiatan.php on line 122.
+ 1 APPPATH\Views\beritaKegiatan.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $beritaKegiatan', 'APPPATH\\Views\\beritaKegiatan.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\beritaKegiatan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('beritaKegiatan', [], true)
+ 5 APPPATH\Controllers\Home.php(64): view('beritaKegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->beritaKegiatan()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 06:32:59 --> Undefined variable $namaFile
+in APPPATH\Views\admin\unduh\v_index.php on line 179.
+ 1 APPPATH\Views\admin\unduh\v_index.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namaFile', 'APPPATH\\Views\\admin\\unduh\\v_index.php', 179)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\unduh\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/unduh/v_index', [], true)
+ 5 APPPATH\Views\layout\v_content.php(4): view('admin/unduh/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\Unduh.php(27): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Unduh->index()
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unduh))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-19 08:14:35 --> mysqli_sql_exception: Unknown column 'tb_hibah_dana.id_user' in 'on clause' in C:\xampp\htdocs\ta_pbw\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ta_pbw\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tb_hiba...', 0)
+#1 C:\xampp\htdocs\ta_pbw\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_hiba...')
+#2 C:\xampp\htdocs\ta_pbw\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_hiba...')
+#3 C:\xampp\htdocs\ta_pbw\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tb_hiba...', Array, false)
+#4 C:\xampp\htdocs\ta_pbw\app\Models\ModelHibahDana.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ta_pbw\app\Controllers\Hibah.php(24): App\Models\ModelHibahDana->allData()
+#6 C:\xampp\htdocs\ta_pbw\system\CodeIgniter.php(904): App\Controllers\Hibah->index_dana()
+#7 C:\xampp\htdocs\ta_pbw\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hibah))
+#8 C:\xampp\htdocs\ta_pbw\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ta_pbw\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-19 08:14:35 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ModelHibahDana.php on line 20.
+ 1 APPPATH\Controllers\Hibah.php(24): App\Models\ModelHibahDana->allData()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Hibah->index_dana()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hibah))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

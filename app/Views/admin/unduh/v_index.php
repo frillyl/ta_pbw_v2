@@ -175,8 +175,8 @@
                             <input type="text" name="keterangan" class="form-control" id="keterangan" placeholder="<?= $value['keterangan'] ?>" value="<?= $value['keterangan'] ?>">
                         </div>
                         <div class="form-group mt-2">
-                            <label for="sub_judul"><b>Sub-judul Berita</b></label>
-                            <input type="text" name="sub_judul" class="form-control" id="sub_judul" placeholder="<?= $value['sub_judul'] ?>" value="<?= $value['sub_judul'] ?>">
+                            <label for="file"><b>File</b></label>
+                            <input class="form-control" name="file" type="file" id="file" value="<?php $value['file'] ?>" data-placeholder=" <?php $value['file']; ?>">
                         </div>
                         <div class="form-group">
                             <label for="edited_by" hidden><b>Diedit Oleh</b></label>
@@ -192,4 +192,7 @@
             </div>
         </div>
     <?php } ?>
+
+    <!-- Modal Delete -->
+
 </div>
